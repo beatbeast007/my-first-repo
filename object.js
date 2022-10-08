@@ -48,3 +48,9 @@ user.f(); // John  (this == user)
 admin.f(); // Admin  (this == admin)
 
 admin['f'](); //
+
+function sayHi() {
+  alert(this);
+}
+
+sayHi(); // undefined
